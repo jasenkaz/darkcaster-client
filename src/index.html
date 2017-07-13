@@ -5,10 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Darkcaster</title>
-  <link rel="stylesheet" href="../dist/style.css"/>
+
 </head>
 <body>
+</div>
   <div ng-controller='MainController as ctrl'>
+    {{ ctrl.message }}
+  </div>
     <section>
       <header>
       <p>Precipitation Probability: {{ ctrl.weatherData.precipProbability * 100 | number:2 }}%</p>
